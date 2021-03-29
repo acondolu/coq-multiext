@@ -1,0 +1,31 @@
+opam-version: "2.0"
+maintainer: "andreacondoluci@gmail.com"
+version: "dev"
+
+homepage: "https://github.com/acondolu/coq-multiext"
+dev-repo: "git+https://github.com/acondolu/coq-multiext.git"
+bug-reports: "https://github.com/acondolu/coq-multiext/issues"
+license: "GNU LGPL"
+
+synopsis: "Well-foundedness of multiset extension of an order"
+description: """
+Coq development of the wellfoundedness of the multiset extension
+of a well-founded binary relation. Useful for proving termination.
+Does not assume decidability of equality of elements of the domain."""
+
+build: ["echo" "done"]
+depends: [
+  "dune" {>= "2.5"}
+  "coq" {(>= "8.10" & < "8.14~") | (= "dev")}
+]
+
+tags: [
+  "category:Computer Science/Data Types and Data Structures"
+  "keyword:multiset extension"
+  "keyword:order relation"
+  "keyword:termination"
+  "keyword:well-founded relations"
+]
+authors: [
+  "Andrea Condoluci"
+]
